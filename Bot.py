@@ -4,7 +4,7 @@ from discord.ext import commands
 from utils import *
 
 TOKEN = TOKEN
-bot = commands.Bot(command_prefix="r!!")
+bot = commands.Bot(command_prefix="r!!", case_insentitive=True)
 
 @bot.event
 async def on_ready():
