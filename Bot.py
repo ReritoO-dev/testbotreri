@@ -3,7 +3,7 @@ import asyncio
 from discord.ext import commands
 from utils import *
 
-bot = command.Bot(commands_prefix="r!!")
+bot = commands.Bot(command_prefix="r!!")
 
 @bot.event
 async def on_ready():
