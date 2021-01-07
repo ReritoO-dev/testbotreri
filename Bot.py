@@ -3,6 +3,7 @@ import asyncio
 from discord.ext import commands
 from utils import *
 
+TOKEN = open("token.txt", "r").read()
 bot = commands.Bot(command_prefix="r!!")
 
 @bot.event
