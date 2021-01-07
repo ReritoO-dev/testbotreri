@@ -3,13 +3,11 @@ import asyncio
 from discord.ext import commands
 from utils import *
 
-client = discord.Client()
-
-@client.event
+@bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
 
-@client.event
+@bot.event
 async def on_message(message):
     if message.author == client.user:
         return
@@ -17,4 +15,4 @@ async def on_message(message):
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
-client.run(TOKEN)
+bot.run(TOKEN)
