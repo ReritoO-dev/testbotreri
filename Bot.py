@@ -3,6 +3,8 @@ import asyncio
 from discord.ext import commands
 from utils import *
 
+bot = command.Bot(commands_prefix="r!!")
+
 @bot.event
 async def on_ready():
     print('We have logged in as {0.user}'.format(client))
